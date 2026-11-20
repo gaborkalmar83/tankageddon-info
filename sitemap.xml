@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://tankageddon.kalmarium.com/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://tankageddon.kalmarium.com/img/feature.jpg</video:thumbnail_loc>
+      <video:title>Tankageddon trailer</video:title>
+      <video:description>The Tankageddon intro and gameplay: an offline tank shooter with 99 alien boss fights.</video:description>
+      <video:content_loc>https://tankageddon.kalmarium.com/trailer.mp4</video:content_loc>
+    </video:video>
+  </url>
+  <url><loc>https://tankageddon.kalmarium.com/privacy.html</loc><lastmod>2026-11-20</lastmod></url>
+</urlset>

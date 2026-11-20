@@ -1,26 +1,94 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Tankageddon - the last tank on Earth</title>
-<meta name="description" content="Tankageddon: a top-down tank shooter. Crush alien invaders across 99 levels and 10 worlds, upgrade your tank and beat a boss on every map.">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:image" content="keyart.jpg">
+<title>Tankageddon: Tank Shooter - offline tank game with 99 boss fights</title>
+<meta name="description" content="Tankageddon is an offline top-down tank shooter for Android. Crush the alien invasion across 10 worlds, upgrade your tank and beat 99 unique boss fights. Free on Google Play.">
+<link rel="canonical" href="https://tankageddon.kalmarium.com/">
+<meta name="theme-color" content="#0f1517">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tankageddon">
+<meta property="og:title" content="Tankageddon: Tank Shooter">
+<meta property="og:description" content="The last tank on Earth. Offline tank game with 99 unique alien boss fights. Free on Google Play.">
+<meta property="og:url" content="https://tankageddon.kalmarium.com/">
+<meta property="og:image" content="https://tankageddon.kalmarium.com/img/feature.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:video" content="https://tankageddon.kalmarium.com/trailer.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tankageddon: Tank Shooter">
+<meta name="twitter:description" content="Offline tank game: crush the alien invasion and beat 99 unique boss fights.">
+<meta name="twitter:image" content="https://tankageddon.kalmarium.com/img/feature.jpg">
+<meta name="google-play-app" content="app-id=com.kalmarium.tankageddon">
 <link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["VideoGame", "MobileApplication"],
+  "name": "Tankageddon: Tank Shooter",
+  "alternateName": "Tankageddon",
+  "url": "https://tankageddon.kalmarium.com/",
+  "image": "https://tankageddon.kalmarium.com/img/feature.jpg",
+  "screenshot": [
+    "https://tankageddon.kalmarium.com/img/01-boss.webp",
+    "https://tankageddon.kalmarium.com/img/02-night.webp",
+    "https://tankageddon.kalmarium.com/img/03-bases.webp",
+    "https://tankageddon.kalmarium.com/img/04-xeno.webp",
+    "https://tankageddon.kalmarium.com/img/05-garage.webp"
+  ],
+  "description": "Offline top-down tank shooter. Crush the alien invasion across 10 worlds, upgrade your tank and beat 99 unique boss fights.",
+  "genre": ["Action", "Shooter", "Arcade", "Vehicle shooter"],
+  "gamePlatform": "Android",
+  "operatingSystem": "Android 7.0+",
+  "applicationCategory": "GameApplication",
+  "playMode": "SinglePlayer",
+  "numberOfPlayers": {"@type": "QuantitativeValue", "value": 1},
+  "contentRating": "Everyone 10+",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"},
+  "trailer": {
+    "@type": "VideoObject",
+    "name": "Tankageddon trailer",
+    "description": "The Tankageddon intro and gameplay.",
+    "contentUrl": "https://tankageddon.kalmarium.com/trailer.mp4",
+    "thumbnailUrl": "https://tankageddon.kalmarium.com/img/feature.jpg",
+    "uploadDate": "2026-11-20"
+  },
+  "author": {"@type": "Organization", "name": "Kalmarium Services BV", "email": "kalmariumservices@gmail.com"},
+  "publisher": {"@type": "Organization", "name": "Kalmarium Services BV"}
+}
+</script>
 <style>
-  :root { --bg:#0f1517; --text:#e9eef0; --muted:#9aa8ad; --line:#2a383d; --accent:#ffb347; --teal:#3fd0c4; }
+  :root { --bg:#0f1517; --panel:#151e21; --text:#e9eef0; --muted:#9aa8ad; --line:#2a383d; --accent:#ffb347; --teal:#3fd0c4; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  img, video { max-width:100%; display:block; }
   .hero { position:relative; min-height:62vh; display:flex; align-items:flex-end; background:url(keyart.jpg) center/cover; }
   .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(to top, var(--bg) 4%, rgba(15,21,23,.25) 60%, rgba(15,21,23,.55)); }
-  .hero div { position:relative; z-index:1; max-width:900px; margin:0 auto; width:100%; padding:0 20px 28px; }
+  .hero > div { position:relative; z-index:1; max-width:1000px; margin:0 auto; width:100%; padding:0 20px 28px; }
   h1 { font-size:clamp(2.6rem,8vw,5rem); margin:0; letter-spacing:.04em; line-height:1; }
   h1 span { color:var(--accent); }
+  h2 { font-size:1.5rem; margin:44px 0 14px; letter-spacing:.02em; }
   .tag { color:var(--teal); letter-spacing:.2em; font-weight:700; text-transform:uppercase; font-size:.85rem; }
-  main { max-width:900px; margin:0 auto; padding:16px 20px 64px; }
+  .sub { color:var(--text); font-size:1.15rem; margin:10px 0 18px; max-width:640px; }
+  .cta { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+  .cta img { height:64px; width:auto; }
+  .cta a.btn { color:var(--bg); background:var(--accent); font-weight:700; text-decoration:none; padding:12px 20px; border-radius:10px; }
+  main { max-width:1000px; margin:0 auto; padding:16px 20px 64px; }
+  .video { border:1px solid var(--line); border-radius:14px; overflow:hidden; background:#000; }
   .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin:24px 0; }
-  .grid div { border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .grid div { border:1px solid var(--line); border-radius:12px; padding:16px 18px; background:var(--panel); }
   .grid b { color:var(--accent); display:block; margin-bottom:4px; }
+  .shots { display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:10px; }
+  .shots img { width:min(560px,85vw); height:auto; border-radius:12px; border:1px solid var(--line); scroll-snap-align:start; flex:none; }
+  ul.facts { padding-left:20px; color:var(--muted); }
+  ul.facts li { margin:4px 0; }
+  details { border:1px solid var(--line); border-radius:10px; padding:10px 16px; margin:10px 0; background:var(--panel); }
+  summary { cursor:pointer; font-weight:600; }
   a { color:var(--teal); }
   footer { color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); margin-top:40px; padding-top:16px; }
 </style>
@@ -29,17 +97,61 @@
 <section class="hero"><div>
   <div class="tag">One tank. No retreat.</div>
   <h1>TANK<span>AGEDDON</span></h1>
+  <p class="sub">The offline tank shooter where one tank takes on the alien invasion. 99 levels, 10 worlds, 99 boss fights, none alike.</p>
+  <div class="cta">
+    <a href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;utm_source=website&amp;utm_medium=hero"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"></a>
+  </div>
 </div></section>
 <main>
-  <p>In 2091 the aliens came. In 40 days every army on Earth fell. One tank survived. Drive it from a fallen city to the heart of the alien Hive: 99 levels, 10 worlds, a boss at the end of every map.</p>
-  <div class="grid">
-    <div><b>Roll over them</b>Alien soldiers have big red eyes, green blood and a healthy fear of your treads.</div>
-    <div><b>Build your tank</b>Six upgrade tracks. Heavier hulls, twin barrels, a rail cannon and missile pods change how your tank looks.</div>
-    <div><b>18 enemy types</b>Snipers, hover tanks, crawlers, mechs, laser towers, gunships, bombers and drone carriers.</div>
-    <div><b>Extraction</b>Beat the boss and a helicopter lifts you out, or a landing ship waits at the shore.</div>
+  <h2>Watch the trailer</h2>
+  <div class="video">
+    <video controls preload="metadata" playsinline poster="img/feature.jpg" aria-label="Tankageddon trailer">
+      <source src="trailer.mp4" type="video/mp4">
+    </video>
   </div>
-  <p>Available on Google Play. Questions: <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a></p>
-  <footer>&copy; 2026 Kalmarium Services BV &middot; <a href="privacy.html">Privacy policy</a> &middot; Art and audio created with the help of AI tools.</footer>
+
+  <h2>The last tank on Earth</h2>
+  <p>In 2091 the aliens came. In 40 days every army on Earth fell. One tank survived. Drive it with one thumb, aim and fire with the other, and fight your way from a fallen city to the heart of the alien Hive. Tankageddon is a top-down tank game with real weight to it, a full campaign and a different boss at the end of every map.</p>
+
+  <div class="grid">
+    <div><b>99 boss fights</b>Drone motherships, pod launchers, laser striders, rail-cannon crabs, burrowing worms, shield fortresses and the Hive Overmind.</div>
+    <div><b>A real campaign</b>Storm alien bases, clear infested zones, escort supply trucks and free captured humans before the boss shows up.</div>
+    <div><b>Roll over them</b>Alien soldiers have big red eyes, green blood and a healthy fear of your treads.</div>
+    <div><b>Upgrade your tank</b>Cannon, armour, shield, engine, missiles and scope. Grow from one barrel to a quad-barrel battery.</div>
+    <div><b>Steal alien tech</b>Disintegrator, railgun, missile swarm, golden shield and five kinds of special shells.</div>
+    <div><b>Day and night</b>10 worlds from Fallen City to The Hive, in morning light, midday, evening or pitch-black night.</div>
+  </div>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/01-boss.webp" width="1600" height="900" loading="lazy" alt="Tankageddon boss fight: the tank melts an alien boss with stolen alien tech">
+    <img src="img/02-night.webp" width="1600" height="900" loading="lazy" alt="Night mission lit only by the tank's headlights and muzzle flashes">
+    <img src="img/03-bases.webp" width="1600" height="900" loading="lazy" alt="Storming an alien base in a top-down tank shooter level">
+    <img src="img/04-xeno.webp" width="1600" height="900" loading="lazy" alt="Alien disintegrator power-up turning enemies into green ash">
+    <img src="img/05-garage.webp" width="1600" height="900" loading="lazy" alt="Garage screen with tank upgrades from one barrel to a quad-barrel battery">
+  </div>
+
+  <h2>Play your way</h2>
+  <ul class="facts">
+    <li>Play offline: no account and no internet needed to play</li>
+    <li>Twin-stick controls with 3 layouts, movable sticks and adjustable visibility</li>
+    <li>4 difficulty levels, from relaxed to brutal</li>
+    <li>Save and quit any time, continue exactly where you left off</li>
+    <li>Works on phones, foldables and tablets (Android 7.0 and newer)</li>
+    <li>Free with a small banner. Premium removes ads, gives 99 lives per map and 10 extra sound packs. No loot boxes.</li>
+  </ul>
+
+  <h2>Questions</h2>
+  <details><summary>Can I play Tankageddon offline?</summary><p>Yes. The whole campaign plays without internet. Ads and purchases need a connection, the game does not.</p></details>
+  <details><summary>Is Tankageddon free?</summary><p>Yes. It is free to play with a small banner ad. Tankageddon Premium is a one-time purchase that removes ads for good.</p></details>
+  <details><summary>Which devices are supported?</summary><p>Android phones, foldables and tablets running Android 7.0 or newer.</p></details>
+  <details><summary>Do I need an account?</summary><p>No. Progress is saved on your device.</p></details>
+
+  <div class="cta" style="margin-top:28px">
+    <a href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;utm_source=website&amp;utm_medium=footer"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"></a>
+  </div>
+
+  <footer>Questions or problems: <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a><br>&copy; 2026 Kalmarium Services BV &middot; <a href="privacy.html">Privacy policy</a> &middot; Art and audio created with the help of AI tools. Google Play and the Google Play logo are trademarks of Google LLC.</footer>
 </main>
 </body>
 </html>
