@@ -28,56 +28,158 @@
 <link rel="apple-touch-icon" href="icon.png">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": ["VideoGame", "MobileApplication"],
-  "name": "Tankageddon: Offline Tank Shooter",
-  "alternateName": "Tankageddon",
-  "url": "https://tankageddon.kalmarium.com/",
-  "image": "https://tankageddon.kalmarium.com/img/og.jpg",
-  "screenshot": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "VideoGame",
+    "MobileApplication"
+   ],
+   "@id": "https://tankageddon.kalmarium.com/#app",
+   "name": "Tankageddon: Offline Tank Shooter",
+   "alternateName": "Tankageddon",
+   "url": "https://tankageddon.kalmarium.com/",
+   "image": "https://tankageddon.kalmarium.com/img/og.jpg",
+   "screenshot": [
     "https://tankageddon.kalmarium.com/img/01-boss.webp",
     "https://tankageddon.kalmarium.com/img/02-night.webp",
     "https://tankageddon.kalmarium.com/img/03-bases.webp",
     "https://tankageddon.kalmarium.com/img/04-xeno.webp",
     "https://tankageddon.kalmarium.com/img/05-garage.webp"
-  ],
-  "description": "Offline top-down tank shooter. Crush the alien invasion across 10 worlds, upgrade your tank and beat 99 unique boss fights.",
-  "genre": ["Action", "Shooter", "Arcade", "Vehicle shooter"],
-  "gamePlatform": "Android",
-  "operatingSystem": "Android 7.0+",
-  "applicationCategory": "GameApplication",
-  "playMode": "SinglePlayer",
-  "numberOfPlayers": {"@type": "QuantitativeValue", "value": 1},
-  "contentRating": "Everyone 10+",
-  "installUrl": "https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon",
-  "downloadUrl": "https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon",
-  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"},
-  "trailer": {
+   ],
+   "description": "Offline top-down tank shooter. Crush the alien invasion across 10 worlds, upgrade your tank and beat 99 unique boss fights.",
+   "genre": [
+    "Action",
+    "Shooter",
+    "Arcade",
+    "Vehicle shooter"
+   ],
+   "gamePlatform": "Android",
+   "operatingSystem": "Android 7.0+",
+   "applicationCategory": "GameApplication",
+   "playMode": "SinglePlayer",
+   "numberOfPlayers": {
+    "@type": "QuantitativeValue",
+    "value": 1
+   },
+   "contentRating": "Everyone 10+",
+   "installUrl": "https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon",
+   "downloadUrl": "https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock"
+   },
+   "trailer": {
     "@type": "VideoObject",
     "name": "Tankageddon: Offline Tank Shooter - official trailer",
     "description": "60 second launch trailer: the alien invasion, 99 bosses and the last tank on Earth.",
     "contentUrl": "https://tankageddon.kalmarium.com/trailer.mp4",
     "thumbnailUrl": "https://tankageddon.kalmarium.com/img/trailer-poster.jpg",
     "uploadDate": "2026-11-20"
+   },
+   "publisher": {
+    "@id": "https://apps.kalmarium.com/#org"
+   }
   },
-  "author": {"@type": "Organization", "name": "Kalmarium Services BV", "email": "kalmariumservices@gmail.com"},
-  "publisher": {"@type": "Organization", "name": "Kalmarium Services BV"}
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Can I play Tankageddon offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The whole campaign plays without internet. Ads and purchases need a connection, the game does not."}},
-    {"@type": "Question", "name": "Is Tankageddon free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is free to play with a small banner ad. You get 3 lives per map, and a short ad can give you 3 more. Tankageddon Premium is a one-time purchase that removes ads for good, gives 99 lives per map, 10 upgrade points and 10 extra sound packs. There are no loot boxes."}},
-    {"@type": "Question", "name": "Which devices are supported?", "acceptedAnswer": {"@type": "Answer", "text": "Android phones, foldables and tablets running Android 7.0 or newer. The game plays in landscape."}},
-    {"@type": "Question", "name": "Do I need an account?", "acceptedAnswer": {"@type": "Answer", "text": "No. Progress is saved on your device."}},
-    {"@type": "Question", "name": "Does Tankageddon support gamepads?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Since version 1.3.6 you can play with a Bluetooth or USB gamepad (Xbox, PlayStation, 8BitDo and more). The left stick drives, the right stick aims and fires, and the Settings Controller section lets you set dead zones, aim response, invert, swap sticks and remap every button."}},
-    {"@type": "Question", "name": "How many levels and bosses are there?", "acceptedAnswer": {"@type": "Answer", "text": "99 levels in 10 worlds, and every level ends with a different alien boss, 99 in total."}},
-    {"@type": "Question", "name": "Is it a top-down tank game?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You drive with one thumb and aim and fire with the other, from a top-down view, with three control layouts you can move and resize."}},
-    {"@type": "Question", "name": "Was AI used to make the game?", "acceptedAnswer": {"@type": "Answer", "text": "Art and audio were created with the help of AI tools. Design, code and balancing are done by the developer."}}
-  ]
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can I play Tankageddon offline?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The whole campaign plays without internet. Ads and purchases need a connection, the game does not."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Tankageddon free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. It is free to play with a small banner ad. You get 3 lives per map, and a short ad can give you 3 more. Tankageddon Premium is a one-time purchase that removes ads for good, gives 99 lives per map, 10 upgrade points and 10 extra sound packs. There are no loot boxes."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which devices are supported?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Android phones, foldables and tablets running Android 7.0 or newer. The game plays in landscape."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need an account?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Progress is saved on your device."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Tankageddon support gamepads?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Since version 1.3.6 you can play with a Bluetooth or USB gamepad (Xbox, PlayStation, 8BitDo and more). The left stick drives, the right stick aims and fires, and the Settings Controller section lets you set dead zones, aim response, invert, swap sticks and remap every button."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many levels and bosses are there?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "99 levels in 10 worlds, and every level ends with a different alien boss, 99 in total."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is it a top-down tank game?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. You drive with one thumb and aim and fire with the other, from a top-down view, with three control layouts you can move and resize."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was AI used to make the game?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Art and audio were created with the help of AI tools. Design, code and balancing are done by the developer."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://apps.kalmarium.com/#org",
+   "name": "Kalmarium Services",
+   "legalName": "Kalmarium Services B.V.",
+   "alternateName": [
+    "Kalmarium",
+    "Kalmarium Apps"
+   ],
+   "url": "https://apps.kalmarium.com/",
+   "logo": "https://apps.kalmarium.com/brand/dev-icon-512.png",
+   "email": "kalmariumservices@gmail.com",
+   "sameAs": [
+    "https://play.google.com/store/apps/developer?id=Kalmarium+Services",
+    "https://www.youtube.com/@kalmariumservices",
+    "https://kalmarium.com"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://tankageddon.kalmarium.com/#website",
+   "name": "Tankageddon",
+   "url": "https://tankageddon.kalmarium.com/",
+   "publisher": {
+    "@id": "https://apps.kalmarium.com/#org"
+   }
+  }
+ ]
 }
 </script>
 <style>
@@ -110,11 +212,15 @@
   summary { cursor:pointer; font-weight:600; }
   a { color:var(--teal); }
   footer { color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); margin-top:40px; padding-top:16px; }
+  .byline { display:inline-block; margin-bottom:8px; color:var(--text); font-size:.9rem; font-weight:600; text-decoration:none; }
+  .byline:hover { text-decoration:underline; }
+  .related-app { margin:28px 0 0; color:var(--muted); }
 </style>
 <script defer src="https://overwatch.kalmarium.com/h.js" data-app="tankageddon"></script>
 </head>
 <body>
 <section class="hero"><div>
+  <a class="byline" href="https://apps.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=byline">By Kalmarium Services</a>
   <div class="tag">One tank. No retreat.</div>
   <h1>TANK<span>AGEDDON</span> <small>Offline top-down tank shooter</small></h1>
   <p class="sub">The offline tank shooter where one tank takes on the alien invasion. 99 levels, 10 worlds, 99 boss fights, none alike.</p>
@@ -182,21 +288,23 @@
     <a aria-label="Get it on Google Play: Tankageddon offline tank shooter" href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dbottom" rel="noopener"><img alt="Get it on Google Play" src="img/google-play-badge.png" width="646" height="250" loading="lazy"></a>
   </div>
 
-  <h2>More from Kalmarium</h2>
+  <p class="related-app">If you like Tankageddon, try <a href="https://knowdrop.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=related">Knowdrop: daily trivia quiz</a>.</p>
+
+  <h2>More apps by Kalmarium Services</h2>
   <ul class="facts more">
     <li><a href="https://apps.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=footer">All Kalmarium apps</a></li>
-    <li><a href="https://knowdrop.kalmarium.com/">Knowdrop - daily trivia quiz</a></li>
-    <li><a href="https://lingua.kalmarium.com/">Lingua Pairs - language memory game</a></li>
-    <li><a href="https://netcheck.kalmarium.com/">Ultimate Network Troubleshooter - Wi-Fi and network analyzer</a></li>
-    <li><a href="https://prep4cert.kalmarium.com/">Prep 4 Cert - Microsoft exam practice</a></li>
-    <li><a href="https://crackafold.kalmarium.com/">Crack A Fold - foldable screen prank</a></li>
-    <li><a href="https://bilingua.kalmarium.com/">Bilingua Reader - bilingual EPUB and PDF reader</a></li>
-    <li><a href="https://intercom.kalmarium.com/">Lazy Intercom - family intercom app</a></li>
-    <li><a href="https://mahjong365.kalmarium.com/">Mahjong365 - daily mahjong solitaire</a></li>
-    <li><a href="https://kalmarium.com/">Kalmarium Services BV - company site</a></li>
+    <li><a href="https://knowdrop.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=footer&amp;utm_campaign=sister">Knowdrop: daily trivia quiz</a></li>
+    <li><a href="https://mahjong365.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=footer&amp;utm_campaign=sister">Mahjong365: mahjong solitaire with large tiles</a></li>
+    <li><a href="https://lingua.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=footer&amp;utm_campaign=sister">Lingua Pairs: word memory game for languages</a></li>
+    <li><a href="https://bilingua.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=footer&amp;utm_campaign=sister">Bilingua Reader: bilingual EPUB and PDF reader</a></li>
+    <li><a href="https://prep4cert.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=footer&amp;utm_campaign=sister">Prep 4 Cert: Microsoft exam practice questions</a></li>
+    <li><a href="https://netcheck.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=footer&amp;utm_campaign=sister">Ultimate Network Troubleshooter: WiFi analyzer and network tools</a></li>
+    <li><a href="https://intercom.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=footer&amp;utm_campaign=sister">Lazy Intercom: family intercom for Android</a></li>
+    <li><a href="https://crackafold.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=footer&amp;utm_campaign=sister">Crack A Fold: foldable phone prank</a></li>
+    <li><a href="https://kalmarium.com/">kalmarium.com</a>: the Kalmarium Services company site</li>
   </ul>
 
-  <footer>Questions or problems: <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a><br>&copy; 2026 Kalmarium Services BV &middot; <a href="privacy-policy.html">Privacy policy</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dfooter" rel="noopener">Get Tankageddon on Google Play</a> &middot; Art and audio created with the help of AI tools. Google Play and the Google Play logo are trademarks of Google LLC.</footer>
+  <footer>Questions or problems: <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a><br>&copy; 2026 Kalmarium Services B.V., Almere, the Netherlands. &middot; <a href="privacy-policy.html">Privacy policy</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dfooter" rel="noopener">Get Tankageddon on Google Play</a> &middot; Art and audio created with the help of AI tools. Google Play and the Google Play logo are trademarks of Google LLC.</footer>
 </main>
 </body>
 </html>
