@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tank Game with Controller Support: Tankageddon Gamepads</title>
+<meta name="description" content="Tankageddon supports Bluetooth and USB gamepads since version 1.3.6: the left stick drives, the right stick aims and fires, and every button can be remapped.">
+<link rel="canonical" href="https://tankageddon.kalmarium.com/gamepad-support.html">
+<meta name="theme-color" content="#0f1517">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tankageddon">
+<meta property="og:title" content="Tank Game with Controller Support: Tankageddon Gamepads">
+<meta property="og:description" content="Tankageddon supports Bluetooth and USB gamepads since version 1.3.6: the left stick drives, the right stick aims and fires, and every button can be remapped.">
+<meta property="og:url" content="https://tankageddon.kalmarium.com/gamepad-support.html">
+<meta property="og:image" content="https://tankageddon.kalmarium.com/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tankageddon offline tank shooter: a tank fires at alien motherships over a burning city">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tank Game with Controller Support: Tankageddon Gamepads">
+<meta name="twitter:description" content="Tankageddon supports Bluetooth and USB gamepads since version 1.3.6: the left stick drives, the right stick aims and fires, and every button can be remapped.">
+<meta name="twitter:image" content="https://tankageddon.kalmarium.com/img/og.jpg">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+  {"@type": "Question", "name": "Which gamepads work with Tankageddon?", "acceptedAnswer": {"@type": "Answer", "text": "Bluetooth and USB gamepads work since version 1.3.6, such as Xbox, PlayStation and 8BitDo controllers and most others."}},
+  {"@type": "Question", "name": "Can I change the buttons?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Controller section in Settings lets you set dead zones and aim response, invert, swap the sticks and remap every button."}},
+  {"@type": "Question", "name": "Do the on-screen controls get in the way?", "acceptedAnswer": {"@type": "Answer", "text": "They hide while you play with a pad and come back the moment you touch the screen."}}
+]}
+</script>
+<style>
+  :root { --bg:#0f1517; --panel:#151e21; --text:#e9eef0; --muted:#9aa8ad; --line:#2a383d; --accent:#ffb347; --teal:#3fd0c4; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  img, video { max-width:100%; display:block; }
+  .hero { position:relative; min-height:62vh; display:flex; align-items:flex-end; background:url(keyart.jpg) center/cover; background:image-set(url(keyart.webp) type("image/webp"), url(keyart.jpg) type("image/jpeg")) center/cover; }
+  .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(to top, var(--bg) 4%, rgba(15,21,23,.25) 60%, rgba(15,21,23,.55)); }
+  .hero > div { position:relative; z-index:1; max-width:1000px; margin:0 auto; width:100%; padding:0 20px 28px; }
+  h1 { font-size:clamp(2.6rem,8vw,5rem); margin:0; letter-spacing:.04em; line-height:1; }
+  h1 span { color:var(--accent); }
+  h1 small { display:block; margin-top:10px; font-size:clamp(1.05rem,3.2vw,1.6rem); letter-spacing:.12em; text-transform:uppercase; color:var(--teal); font-weight:700; }
+  h2 { font-size:1.5rem; margin:44px 0 14px; letter-spacing:.02em; }
+  .tag { color:var(--teal); letter-spacing:.2em; font-weight:700; text-transform:uppercase; font-size:.85rem; }
+  .sub { color:var(--text); font-size:1.15rem; margin:10px 0 18px; max-width:640px; }
+  .cta { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+  .cta img { width:200px; height:auto; }
+  .cta a.btn { color:var(--bg); background:var(--accent); font-weight:700; text-decoration:none; padding:12px 20px; border-radius:10px; }
+  main { max-width:1000px; margin:0 auto; padding:16px 20px 64px; }
+  .video { border:1px solid var(--line); border-radius:14px; overflow:hidden; background:#000; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin:24px 0; }
+  .grid div { border:1px solid var(--line); border-radius:12px; padding:16px 18px; background:var(--panel); }
+  .grid b { color:var(--accent); display:block; margin-bottom:4px; }
+  .shots { display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:10px; }
+  .shots img { width:min(560px,85vw); height:auto; border-radius:12px; border:1px solid var(--line); scroll-snap-align:start; flex:none; }
+  ul.facts { padding-left:20px; color:var(--muted); }
+  ul.facts li { margin:4px 0; }
+  details { border:1px solid var(--line); border-radius:10px; padding:10px 16px; margin:10px 0; background:var(--panel); }
+  summary { cursor:pointer; font-weight:600; }
+  a { color:var(--teal); }
+  footer { color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); margin-top:40px; padding-top:16px; }
+  .top { border-bottom:1px solid var(--line); background:var(--panel); }
+  .top div { max-width:1000px; margin:0 auto; padding:14px 20px; }
+  .top a { color:var(--text); font-weight:800; letter-spacing:.08em; text-decoration:none; }
+  .top a span { color:var(--accent); }
+  .page h1 { font-size:clamp(1.9rem,5.6vw,3rem); letter-spacing:.02em; line-height:1.1; margin:26px 0 10px; }
+  .page .sub { max-width:720px; }
+  .page p, .page ul.facts { max-width:760px; }
+  .pair { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin:22px 0 4px; }
+  .pair figure { margin:0; }
+  .pair img { width:100%; height:auto; border-radius:12px; border:1px solid var(--line); }
+  .pair figcaption { font-size:.9rem; color:var(--muted); margin-top:6px; }
+  .cta-bottom { margin-top:24px; }
+</style>
+<script defer src="https://overwatch.kalmarium.com/h.js" data-app="tankageddon"></script>
+</head>
+<body>
+<header class="top"><div><a href="./">TANK<span>AGEDDON</span></a></div></header>
+<main class="page">
+  <h1>Play Tankageddon with a gamepad</h1>
+  <p class="sub">Touch sticks are fine for a tank game, but some players want a real controller. Since version 1.3.6, Tankageddon supports Bluetooth and USB gamepads.</p>
+  <div class="cta">
+    <a aria-label="Get it on Google Play: Tankageddon offline tank shooter" href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dgamepad-support" rel="noopener"><img alt="Get it on Google Play" src="img/google-play-badge.png" width="646" height="250"></a>
+  </div>
+
+  <h2>Which gamepads</h2>
+  <p>Tankageddon supports Bluetooth and USB gamepads, such as Xbox, PlayStation and 8BitDo controllers and most others. Connect the pad the way Android normally does: pair a Bluetooth pad in the system settings, or plug in a USB pad. Then start the game and use it.</p>
+  <p>Controllers differ between phones, tablets and Android versions, and we have not tried every model. If your gamepad does not work, email us at <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a> with the pad and device you use, and we will look at it.</p>
+
+  <h2>The default controls</h2>
+  <ul class="facts">
+    <li>The left stick drives the tank.</li>
+    <li>The right stick aims and fires.</li>
+    <li>The triggers fire the missile and raise the shield.</li>
+    <li>Start pauses the game.</li>
+  </ul>
+  <p>This is the same twin-stick idea as on the touch screen, so there is nothing new to learn if you already play with two thumbs. The on-screen controls hide while you play with a pad and come back the moment you touch the screen.</p>
+
+  <h2>Settings for the Controller section</h2>
+  <p>Gamepads are not all the same, so Tankageddon has a Controller section in Settings. There you can set:</p>
+  <ul class="facts">
+    <li>Dead zones, so a loose stick does not drift</li>
+    <li>Aim response</li>
+    <li>Invert</li>
+    <li>Swapped sticks, if you prefer to drive with the right stick</li>
+    <li>Remapping of every button</li>
+  </ul>
+
+  <h2>Touch controls are still there</h2>
+  <p>A gamepad is an option, not a requirement. The touch controls stay available at all times: there are 3 layouts, the sticks can be moved and resized, and you can choose how visible they are. Touch is handy when you have no pad with you, and a pad is handy when you want to hold a controller and watch the whole battlefield. Tankageddon plays in landscape, which suits both.</p>
+  <p>Before you change any gamepad setting, play a level with the defaults. The left stick, the right stick and the triggers are the same ideas as the touch controls, so you will probably feel at home at once, and you can adjust the Controller settings afterwards.</p>
+
+  <h2>Everything else is the same</h2>
+  <p>A gamepad changes how you steer, not what you play. It is the same offline campaign of 99 levels and 99 boss fights, the same upgrades and the same worlds. You can switch between pad and touch at any time. Tankageddon is free to play, with a small banner ad, and runs on Android 7.0 or newer. To see what the game offers, read about the <a href="top-down-tank-shooter.html">controls, bosses and upgrades</a>, or check <a href="offline-tank-games.html">what works offline</a>.</p>
+
+  <div class="pair"><figure><img src="img/01-boss.webp" width="1600" height="900" loading="lazy" alt="Tankageddon boss fight: the tank melts an alien boss with stolen alien tech"><figcaption>A boss fight</figcaption></figure><figure><img src="img/04-xeno.webp" width="1600" height="900" loading="lazy" alt="Alien disintegrator power-up turning enemies into green ash"><figcaption>The alien disintegrator power-up</figcaption></figure></div>
+
+  <h2>Questions</h2>
+  <details><summary>Which gamepads work with Tankageddon?</summary><p>Bluetooth and USB gamepads work since version 1.3.6, such as Xbox, PlayStation and 8BitDo controllers and most others.</p></details>
+  <details><summary>Can I change the buttons?</summary><p>Yes. The Controller section in Settings lets you set dead zones and aim response, invert, swap the sticks and remap every button.</p></details>
+  <details><summary>Do the on-screen controls get in the way?</summary><p>They hide while you play with a pad and come back the moment you touch the screen.</p></details>
+
+  <div class="cta cta-bottom">
+    <a aria-label="Get it on Google Play: Tankageddon offline tank shooter" href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dgamepad-support" rel="noopener"><img alt="Get it on Google Play" src="img/google-play-badge.png" width="646" height="250" loading="lazy"></a>
+  </div>
+
+  <h2>More about Tankageddon</h2>
+  <ul class="facts">
+    <li><a href="./">Tankageddon home page</a></li>
+    <li><a href="top-down-tank-shooter.html">Top-down tank shooter: controls, bosses and upgrades</a></li>
+    <li><a href="offline-tank-games.html">An offline tank game: what works without internet</a></li>
+  </ul>
+</main>
+<footer style="max-width:1000px;margin:0 auto 40px;padding:16px 20px 0">Questions or problems: <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a><br>&copy; 2026 Kalmarium Services B.V., Almere, the Netherlands. &middot; <a href="privacy-policy.html">Privacy policy</a> &middot; <a href="https://apps.kalmarium.com/?utm_source=tankageddon&amp;utm_medium=footer">All Kalmarium apps</a> &middot; Art and audio created with the help of AI tools. Google Play and the Google Play logo are trademarks of Google LLC.</footer>
+</body>
+</html>
