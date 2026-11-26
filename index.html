@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tankageddon: Offline Tank Shooter - 99 Boss Fights</title>
-<meta name="description" content="Tankageddon is a free offline tank shooter for Android. Crush the alien invasion across 10 worlds, upgrade your tank and beat 99 unique boss fights.">
+<title>Tankageddon: Offline Tank Shooter with 99 Boss Fights</title>
+<meta name="description" content="Tankageddon is an offline top-down tank shooter for Android. Crush the alien invasion across 10 worlds and beat 99 unique boss fights. Free to play, no account.">
 <link rel="canonical" href="https://tankageddon.kalmarium.com/">
 <meta name="theme-color" content="#0f1517">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Tankageddon">
-<meta property="og:title" content="Tankageddon: Offline Tank Shooter">
-<meta property="og:description" content="The last tank on Earth. Free offline tank shooter with 99 unique alien boss fights, 10 worlds and no account needed.">
+<meta property="og:title" content="Tankageddon: Offline Tank Shooter with 99 Boss Fights">
+<meta property="og:description" content="Tankageddon is an offline top-down tank shooter for Android. Crush the alien invasion across 10 worlds and beat 99 unique boss fights. Free to play, no account.">
 <meta property="og:url" content="https://tankageddon.kalmarium.com/">
 <meta property="og:image" content="https://tankageddon.kalmarium.com/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -19,10 +19,11 @@
 <meta property="og:video" content="https://tankageddon.kalmarium.com/trailer.mp4">
 <meta property="og:video:type" content="video/mp4">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tankageddon: Offline Tank Shooter">
-<meta name="twitter:description" content="Free offline tank shooter: crush the alien invasion and beat 99 unique boss fights.">
+<meta name="twitter:title" content="Tankageddon: Offline Tank Shooter with 99 Boss Fights">
+<meta name="twitter:description" content="Tankageddon is an offline top-down tank shooter for Android. Crush the alien invasion across 10 worlds and beat 99 unique boss fights. Free to play, no account.">
 <meta name="twitter:image" content="https://tankageddon.kalmarium.com/img/og.jpg">
 <meta name="google-play-app" content="app-id=com.kalmarium.tankageddon">
+<link rel="preload" as="image" href="keyart.webp" type="image/webp">
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <script type="application/ld+json">
@@ -56,7 +57,7 @@
     "name": "Tankageddon: Offline Tank Shooter - official trailer",
     "description": "60 second launch trailer: the alien invasion, 99 bosses and the last tank on Earth.",
     "contentUrl": "https://tankageddon.kalmarium.com/trailer.mp4",
-    "thumbnailUrl": "https://tankageddon.kalmarium.com/img/feature.jpg",
+    "thumbnailUrl": "https://tankageddon.kalmarium.com/img/trailer-poster.jpg",
     "uploadDate": "2026-11-20"
   },
   "author": {"@type": "Organization", "name": "Kalmarium Services BV", "email": "kalmariumservices@gmail.com"},
@@ -69,9 +70,13 @@
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Can I play Tankageddon offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The whole campaign plays without internet. Ads and purchases need a connection, the game does not."}},
-    {"@type": "Question", "name": "Is Tankageddon free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is free to play with a small banner ad. Tankageddon Premium is a one-time purchase that removes ads for good."}},
-    {"@type": "Question", "name": "Which devices are supported?", "acceptedAnswer": {"@type": "Answer", "text": "Android phones, foldables and tablets running Android 7.0 or newer."}},
-    {"@type": "Question", "name": "Do I need an account?", "acceptedAnswer": {"@type": "Answer", "text": "No. Progress is saved on your device."}}
+    {"@type": "Question", "name": "Is Tankageddon free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is free to play with a small banner ad. You get 3 lives per map, and a short ad can give you 3 more. Tankageddon Premium is a one-time purchase that removes ads for good, gives 99 lives per map, 10 upgrade points and 10 extra sound packs. There are no loot boxes."}},
+    {"@type": "Question", "name": "Which devices are supported?", "acceptedAnswer": {"@type": "Answer", "text": "Android phones, foldables and tablets running Android 7.0 or newer. The game plays in landscape."}},
+    {"@type": "Question", "name": "Do I need an account?", "acceptedAnswer": {"@type": "Answer", "text": "No. Progress is saved on your device."}},
+    {"@type": "Question", "name": "Does Tankageddon support gamepads?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Since version 1.3.6 you can play with a Bluetooth or USB gamepad (Xbox, PlayStation, 8BitDo and more). The left stick drives, the right stick aims and fires, and the Settings Controller section lets you set dead zones, aim response, invert, swap sticks and remap every button."}},
+    {"@type": "Question", "name": "How many levels and bosses are there?", "acceptedAnswer": {"@type": "Answer", "text": "99 levels in 10 worlds, and every level ends with a different alien boss, 99 in total."}},
+    {"@type": "Question", "name": "Is it a top-down tank game?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You drive with one thumb and aim and fire with the other, from a top-down view, with three control layouts you can move and resize."}},
+    {"@type": "Question", "name": "Was AI used to make the game?", "acceptedAnswer": {"@type": "Answer", "text": "Art and audio were created with the help of AI tools. Design, code and balancing are done by the developer."}}
   ]
 }
 </script>
@@ -80,7 +85,7 @@
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
   img, video { max-width:100%; display:block; }
-  .hero { position:relative; min-height:62vh; display:flex; align-items:flex-end; background:url(keyart.jpg) center/cover; }
+  .hero { position:relative; min-height:62vh; display:flex; align-items:flex-end; background:url(keyart.jpg) center/cover; background:image-set(url(keyart.webp) type("image/webp"), url(keyart.jpg) type("image/jpeg")) center/cover; }
   .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(to top, var(--bg) 4%, rgba(15,21,23,.25) 60%, rgba(15,21,23,.55)); }
   .hero > div { position:relative; z-index:1; max-width:1000px; margin:0 auto; width:100%; padding:0 20px 28px; }
   h1 { font-size:clamp(2.6rem,8vw,5rem); margin:0; letter-spacing:.04em; line-height:1; }
@@ -90,7 +95,7 @@
   .tag { color:var(--teal); letter-spacing:.2em; font-weight:700; text-transform:uppercase; font-size:.85rem; }
   .sub { color:var(--text); font-size:1.15rem; margin:10px 0 18px; max-width:640px; }
   .cta { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
-  .cta img { height:64px; width:auto; }
+  .cta img { width:200px; height:auto; }
   .cta a.btn { color:var(--bg); background:var(--accent); font-weight:700; text-decoration:none; padding:12px 20px; border-radius:10px; }
   main { max-width:1000px; margin:0 auto; padding:16px 20px 64px; }
   .video { border:1px solid var(--line); border-radius:14px; overflow:hidden; background:#000; }
@@ -111,22 +116,22 @@
 <body>
 <section class="hero"><div>
   <div class="tag">One tank. No retreat.</div>
-  <h1>TANK<span>AGEDDON</span><small>Offline Tank Shooter</small></h1>
+  <h1>TANK<span>AGEDDON</span> <small>Offline top-down tank shooter</small></h1>
   <p class="sub">The offline tank shooter where one tank takes on the alien invasion. 99 levels, 10 worlds, 99 boss fights, none alike.</p>
   <div class="cta">
-    <a aria-label="Get it on Google Play: Tankageddon offline tank shooter" href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dhero"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"></a>
+    <a aria-label="Get it on Google Play: Tankageddon offline tank shooter" href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dhero" rel="noopener"><img alt="Get it on Google Play" src="img/google-play-badge.png" width="646" height="250"></a>
   </div>
 </div></section>
 <main>
   <h2>Watch the Tankageddon offline tank shooter trailer</h2>
   <div class="video">
-    <video controls preload="metadata" playsinline poster="img/trailer-poster.jpg" aria-label="Tankageddon trailer">
+    <video controls preload="none" playsinline poster="img/trailer-poster.jpg" aria-label="Tankageddon trailer">
       <source src="trailer.mp4" type="video/mp4">
     </video>
   </div>
 
   <h2>The last tank on Earth: an offline tank shooter</h2>
-  <p>In 2091 the aliens came. In 40 days every army on Earth fell. One tank survived. Drive it with one thumb, aim and fire with the other, and fight your way from a fallen city to the heart of the alien Hive. Tankageddon is an offline top-down tank shooter with real weight to it, a full campaign and a different boss at the end of every map.</p>
+  <p>In 2091 the aliens came. In 40 days every army on Earth fell. One tank survived. Drive it with one thumb, aim and fire with the other, and fight your way from a fallen city to the heart of the alien Hive. Tankageddon for Android is an offline top-down tank shooter with real weight to it, a full campaign and a different boss at the end of every map.</p>
 
   <div class="grid">
     <div><b>99 boss fights</b>Drone motherships, pod launchers, laser striders, rail-cannon crabs, burrowing worms, shield fortresses and the Hive Overmind.</div>
@@ -137,7 +142,7 @@
     <div><b>Day and night</b>10 worlds from Fallen City to The Hive, in morning light, midday, evening or pitch-black night.</div>
   </div>
 
-  <h2>Screenshots</h2>
+  <h2>Tankageddon screenshots</h2>
   <div class="shots">
     <img src="img/01-boss.webp" width="1600" height="900" loading="lazy" alt="Tankageddon boss fight: the tank melts an alien boss with stolen alien tech">
     <img src="img/02-night.webp" width="1600" height="900" loading="lazy" alt="Night mission lit only by the tank's headlights and muzzle flashes">
@@ -145,6 +150,13 @@
     <img src="img/04-xeno.webp" width="1600" height="900" loading="lazy" alt="Alien disintegrator power-up turning enemies into green ash">
     <img src="img/05-garage.webp" width="1600" height="900" loading="lazy" alt="Garage screen with tank upgrades from one barrel to a quad-barrel battery">
   </div>
+
+  <h2>Guides</h2>
+  <ul class="facts guides">
+    <li><a href="offline-tank-games.html">An offline tank game: what works without internet</a></li>
+    <li><a href="top-down-tank-shooter.html">Top-down tank shooter: controls, bosses and upgrades</a></li>
+    <li><a href="gamepad-support.html">Play Tankageddon with a gamepad</a></li>
+  </ul>
 
   <h2>Play your way</h2>
   <ul class="facts">
@@ -158,12 +170,16 @@
 
   <h2>Questions</h2>
   <details><summary>Can I play Tankageddon offline?</summary><p>Yes. The whole campaign plays without internet. Ads and purchases need a connection, the game does not.</p></details>
-  <details><summary>Is Tankageddon free?</summary><p>Yes. It is free to play with a small banner ad. Tankageddon Premium is a one-time purchase that removes ads for good.</p></details>
-  <details><summary>Which devices are supported?</summary><p>Android phones, foldables and tablets running Android 7.0 or newer.</p></details>
+  <details><summary>Is Tankageddon free?</summary><p>Yes. It is free to play with a small banner ad. You get 3 lives per map, and a short ad can give you 3 more. Tankageddon Premium is a one-time purchase that removes ads for good, gives 99 lives per map, 10 upgrade points and 10 extra sound packs. There are no loot boxes.</p></details>
+  <details><summary>Which devices are supported?</summary><p>Android phones, foldables and tablets running Android 7.0 or newer. The game plays in landscape.</p></details>
   <details><summary>Do I need an account?</summary><p>No. Progress is saved on your device.</p></details>
+  <details><summary>Does Tankageddon support gamepads?</summary><p>Yes. Since version 1.3.6 you can play with a Bluetooth or USB gamepad (Xbox, PlayStation, 8BitDo and more). The left stick drives, the right stick aims and fires, and the Settings Controller section lets you set dead zones, aim response, invert, swap sticks and remap every button.</p></details>
+  <details><summary>How many levels and bosses are there?</summary><p>99 levels in 10 worlds, and every level ends with a different alien boss, 99 in total.</p></details>
+  <details><summary>Is it a top-down tank game?</summary><p>Yes. You drive with one thumb and aim and fire with the other, from a top-down view, with three control layouts you can move and resize.</p></details>
+  <details><summary>Was AI used to make the game?</summary><p>Art and audio were created with the help of AI tools. Design, code and balancing are done by the developer.</p></details>
 
   <div class="cta" style="margin-top:28px">
-    <a aria-label="Get it on Google Play: Tankageddon offline tank shooter" href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dfooter"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"></a>
+    <a aria-label="Get it on Google Play: Tankageddon offline tank shooter" href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dbottom" rel="noopener"><img alt="Get it on Google Play" src="img/google-play-badge.png" width="646" height="250" loading="lazy"></a>
   </div>
 
   <h2>More from Kalmarium</h2>
@@ -180,7 +196,7 @@
     <li><a href="https://kalmarium.com/">Kalmarium Services BV - company site</a></li>
   </ul>
 
-  <footer>Questions or problems: <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a><br>&copy; 2026 Kalmarium Services BV &middot; <a href="privacy.html">Privacy policy</a> &middot; Art and audio created with the help of AI tools. Google Play and the Google Play logo are trademarks of Google LLC.</footer>
+  <footer>Questions or problems: <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a><br>&copy; 2026 Kalmarium Services BV &middot; <a href="privacy-policy.html">Privacy policy</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.kalmarium.tankageddon&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dfooter" rel="noopener">Get Tankageddon on Google Play</a> &middot; Art and audio created with the help of AI tools. Google Play and the Google Play logo are trademarks of Google LLC.</footer>
 </main>
 </body>
 </html>
